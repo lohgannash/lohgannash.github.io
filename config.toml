@@ -1,0 +1,111 @@
+baseURL = 'https://lnash.dev'
+languageCode = 'en-us'
+title = 'lnash.dev'
+theme = 'keepit'
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+
+[params]
+    since = 2022
+    author = "Lohgan Nash"              # Author's name
+    subtitle = "Cloud Engineer based in Melbourne, Australia"       # Subtitle
+    home_mode = "" # post or other
+    dateFormatToUse = "" # set date format, default "2 January 2006"
+
+    avatar = "/images/me/avatar.png" #comment it to use gravatar
+    socialShare = true
+
+    description = "" # site description
+    keywords = "" # site keywords
+
+    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.social]
+    GitHub = "lohgannash"
+    Linkedin = "lohgannash"
+    #Twitter = "xxxx"
+    #Instagram = "xxxx"
+    #Email   = "xxxx"
+    #Medium = "xxxx"
+    #Gitlab = "xxxx"
+    #Bitbucket = "xxxx"
+    #Stackoverflow = "xxxxx"
+
+[params.share]
+#Twitter = true
+#Facebook = true
+#Reddit = true
+Linkedin = true
+#Pinterest = true
+#HackerNews = true
+#Mix = true
+#Tumblr = true
+#VKontakte = true
+#Douban = true
+#Weibo = true
+
+# Used only for Seo schema
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[author]
+  name = "Lohgan Nash"
+
+  [params.publisher]
+    name = "Lohgan Nash"
+
+    [params.publisher.logo]
+      url = "logo.png"
+      width = 127
+      height = 40
+
+  [params.logo]
+    url = "logo.png"
+    width = 127
+    height = 40
+
+  [params.image]
+    url = "cover.png"
+    width = 800
+    height = 600
+
+[params.gitalk]
+owner = ""       # Your GitHub ID
+repo = ""        # The repo to store comments
+clientId = ""    # Your client ID
+clientSecret = "" # Your client secret
+
+[params.utterances]       # https://utteranc.es/
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
